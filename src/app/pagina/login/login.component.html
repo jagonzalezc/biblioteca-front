@@ -1,0 +1,13 @@
+<div>
+    <label>Correo  electrónico: </label>
+    <input type="email" name="email" [(ngModel)]="loginDTO.email" email="true" required />
+    </div>
+    <br>
+     <div>
+    <label>Escribir Contraseña: </label>
+    <input type="password" name="password" [(ngModel)]="loginDTO.password"  required/>
+    </div>
+    <button class="btn btn-primary" type="submit" (click)="login()">
+        <i class="fa-solid fa-circle-plus me-1"></i>Ingresar
+    </button>
+  
